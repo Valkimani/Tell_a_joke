@@ -5,3 +5,20 @@
 html {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  background: #43badd;
+}
+.container {
+  /* view port heighth and view port width dynamically scale the project based on the size of the view port/window */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  /* align items top bottom */
+  flex-direction: column;
+  /* Align horizontally */
+  justify-content: center;
+  /* align vertically */
+  align-items: center;
+}
