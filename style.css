@@ -30,6 +30,21 @@ body {
   background-repeat: no-repeat;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: black;
+  background:rgb(138, 135, 135);
+  border: none;
+  border-radius: 5px;
+  /* Subtle shadow: horizontal offset, vertical offset, blu r(how far out),spread (how far the shadow spreads from the element */
+  box-shadow: 2px 2px 20px 10px rgba(12, 3, 3, 0.5);
+}
+
 /* Media Query:Tablet or smaller */
 /* less than 1000px */
 @media screen and (max-width: 1000px) {
@@ -39,6 +54,9 @@ body {
     /* background-size:cover ; */
     
   }
-
+button {
+  box-shadow: 5px 5px 30px 20px rgba(0,0,0,0.6);
+  background-size: cover;
+}
   
 }
