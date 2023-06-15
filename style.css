@@ -45,6 +45,20 @@ button {
   box-shadow: 2px 2px 20px 10px rgba(12, 3, 3, 0.5);
 }
 
+/* Pseudo class: Something that styles when a given event or state has occurred. Styling when the user is interacting with the button*/
+
+button:hover {
+  filter: brightness(95%)
+}
+
+button:active {
+  transform: scale(0.98);  
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
 /* Media Query:Tablet or smaller */
 /* less than 1000px */
 @media screen and (max-width: 1000px) {
