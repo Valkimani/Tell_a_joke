@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background: #43badd;
+  background: #1b6d87;
 }
 .container {
   /* view port heighth and view port width dynamically scale the project based on the size of the view port/window */
@@ -21,4 +21,12 @@ body {
   justify-content: center;
   /* align vertically */
   align-items: center;
+  /* Add background to parse the gif url */
+  background: url('./robo.gif');
+  /* Adjust the background size that way the image is fully visible on the screen */
+  background-size: contain;
+  /* left is the horizontal property and center is the vertical property */
+  background-position: left center;
+  background-repeat: no-repeat;
+
 }
