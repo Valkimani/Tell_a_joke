@@ -28,5 +28,17 @@ body {
   /* left is the horizontal property and center is the vertical property */
   background-position: left center;
   background-repeat: no-repeat;
+}
 
+/* Media Query:Tablet or smaller */
+/* less than 1000px */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position:center center;
+    background-size:center ;
+    /* background-size:cover ; */
+    
+  }
+
+  
 }
