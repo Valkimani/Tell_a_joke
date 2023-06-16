@@ -23,8 +23,23 @@ const VoiceRSS={speech:function(e){this._validate(e),this._request(e)},_validate
 // get jokes from joke API
 
 async function getJokes() {
+    let joke = '';
+    const apiUrl = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart';
     try{
-something
+        // In the fetch method, parse in apiUrl constant
+        // For the response, create a data constant. Turn response into response.json
+        // Wait until response.json is done to set our data value
+const response = await fetch(apiUrl);
+const data = await response.json();
+// 
+if (data.setup) {
+// Using template string to make it easier to add strings... and variables ${}
+    joke = `${data.setup} ... ${data.delivery}`;
+}else{
+    joke = data.joke;
+}
+console.log(joke
+    )
     } catch(error){
 // catch Errors here
 console.log('Oops', error);
