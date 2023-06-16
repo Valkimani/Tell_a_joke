@@ -3,6 +3,7 @@
 ** User story
 
 As a user, I want be able to press the Tell me a joke button and the button will tell me a random joke.
+And not be able to press the button again until the joke is done being told.
 
 ** Functionality
 

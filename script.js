@@ -60,4 +60,8 @@ tellMe(joke);
 console.log('Oops', error);
     }
 }
-getJokes();
+// getJokes();
+
+// Event listeners: Get the jokes function to start on the click of a button Tell me a joke
+
+button.addEventListener('click', getJokes);
