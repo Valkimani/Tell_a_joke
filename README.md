@@ -13,10 +13,11 @@ AND not be able to press the button again until the joke is done being told.
 
 To achieve this, we'll feed text that we get from our joke API and we want audio in return.
 
-** Technologies
-Text-to-speech API: https://rapidapi.com/voicerss/api/text-to-speech-1/details
+<!-- ** Technologies
+Text-to-speech API: https://rapidapi.com/voicerss/api/text-to-speech-1/details -->
 
 ## Sources
 https://www.voicerss.org/sdk/javascript.aspx
 https://jokeapi.dev/#submit
 https://www.w3schools.com/tags/ref_av_dom.asp
+https://dart.dev/codelabs/async-await

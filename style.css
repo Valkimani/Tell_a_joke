@@ -24,7 +24,7 @@ body {
   /* Adjust the background size that way the image is fully visible on the screen */
   background-size: contain;
   /* left is the horizontal property and center is the vertical property */
-  background-position: left center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
