@@ -1,5 +1,3 @@
-/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
-
 /* ROBOT.GIF from Giphy  https://giphy.com/gifs/animation-robot-character-design-3ohhwkEMAApurvNCGQ */
 
 html {
@@ -8,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  background: #1b6d87;
+  /* background: #1b6d87; */
 }
 .container {
   /* view port heighth and view port width dynamically scale the project based on the size of the view port/window */
@@ -36,7 +34,7 @@ button {
   width: 180px;
   height: 38px;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   background:rgb(47, 184, 100);
   border: none;
@@ -63,9 +61,8 @@ button:disabled {
 /* less than 1000px */
 @media screen and (max-width: 1000px) {
   .container {
-    background-position:center center;
-    background-size:center ;
-    /* background-size:cover ; */
+    background-position: center center;
+    background-size: cover;
     
   }
 button {

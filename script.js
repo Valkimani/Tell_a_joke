@@ -28,7 +28,7 @@ function toggleButton(){
 // create new function
 function tellMe(joke){
     VoiceRSS.speech({
-                key: '<API KEY HERE>',
+                key: '5a8902ae37f846d3b5bd18f5acb9fed1',
                 src: joke,
                 hl: 'en-us',
                 v: 'Linda',
