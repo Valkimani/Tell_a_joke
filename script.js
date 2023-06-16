@@ -75,5 +75,5 @@ console.log('Oops', error);
 // Event listeners: Get the jokes function to start on the click of a button Tell me a joke
 
 button.addEventListener('click', getJokes);
-// Launches after the audio has ended to disable the button once the joke is done, disable while the joke is being told and enable when the joke is done
+// Launches after the audio has ended to disable the button once the joke is starts, disable while the joke is being told and enable when the joke is done
 audioElement.addEventListener('ended', toggleButton);
