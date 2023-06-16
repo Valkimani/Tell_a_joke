@@ -8,7 +8,8 @@ const VoiceRSS={speech:function(e){this._validate(e),this._request(e)},_validate
 // Disable/Enable button
 
 function toggleButton(){
-    // if button disabled is true, conversely the opposite will be false on the other side
+    // If button disabled is true, conversely the opposite will be false on the other side
+    // When the page first loads, the button is not disabled
     button.disabled = !button.disabled;
 }
 // Commenting out the test function to test the Joke function. Moved to the tell me joke function
@@ -30,7 +31,7 @@ function toggleButton(){
 // create new function
 function tellMe(joke){
     VoiceRSS.speech({
-                key: '<API KEY GOES HERE>',
+                key: '<API KEY HERE>',
                 src: joke,
                 hl: 'en-us',
                 v: 'Linda',
@@ -59,8 +60,11 @@ if (data.setup) {
 }else{
     joke = data.joke;
 }
-// console.log(joke)
+// Text-to-speech
 tellMe(joke);
+// Disable button
+toggleButton();
+// console.log(joke)
     } catch(error){
 // catch Errors here
 console.log('Oops', error);
@@ -71,4 +75,5 @@ console.log('Oops', error);
 // Event listeners: Get the jokes function to start on the click of a button Tell me a joke
 
 button.addEventListener('click', getJokes);
+// Launches after the audio has ended to disable the button once the joke is done, disable while the joke is being told and enable when the joke is done
 audioElement.addEventListener('ended', toggleButton);
