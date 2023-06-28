@@ -5,7 +5,7 @@
 Tell a joke is an application utilizing two APIs. The VoiceRSS API and REST Joke API. The Joke API starts off the application with an async getJokes() to trigger the joke using the fetch method to parse in the API URL while the VoiceRSS API provides a response with audio data. The application generates a two-part joke; the joke and a response/delivery. 
 
 
-![Tell me a joke](/src/txttospeech.gif)
+![Tell me a joke](./txttospeech.gif)
 
 To view the demo: **[click here](https://txt2speechapi.netlify.app/)**
 
