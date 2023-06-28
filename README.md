@@ -5,7 +5,7 @@
 Tell a joke is an application utilizing two APIs. The VoiceRSS API and REST Joke API. The Joke API starts off the application with an async getJokes() to trigger the joke using the fetch method to parse in the API URL while the VoiceRSS API provides a response with audio data. The application generates a two-part joke; the joke and a response/delivery. 
 
 
-![Tell me a joke](./txttospeech.gif)
+![Tell me a joke](./bot.gif)
 
 To view the demo: **[click here](https://txt2speechapi.netlify.app/)**
 
@@ -24,7 +24,7 @@ To achieve this, we'll feed text that we get from our joke API and we want audio
 
 # User story
 
-AS A user, I WANT be able to press the Tell me a joke button and the button will tell me a random joke.
+AS A user, I WANT to be able to press the Tell Me a Joke button, and the button will tell me a random joke.
 AND not be able to press the button again until the joke is done being told.
 
 ## Sources
